@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+   <Button
+       android:id="@+id/btn_pindah1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="16dp"
+       android:text="@string/pindah_activity"
+       />
+
+   <Button
+       android:id="@+id/btn_pindah_activity_data"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+       android:text="@string/pindah_activity_data"
+       />
+
+   <Button
+       android:id = "@+id/btn_pindah_activity_objek"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="16dp"
+       android:text="@string/pindah_activity_object"
+       />
+
+   <Button
+       android:id ="@+id/btn_papan_angka"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="16dp"
+       android:text="@string/dialnumber"
+       />
+
+   <Button
+       android:id="@+id/btn_pindah_dari_hasil"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="16dp"
+       android:text="@string/pindah_dengan_result"
+       />
+
+   <TextView
+       android:id="@+id/tv_hasil"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:text="@string/hasil_dari_activity"
+       />
+
+</LinearLayout>

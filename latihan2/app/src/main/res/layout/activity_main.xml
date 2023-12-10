@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Layout dituliskan dalam format xml (extensible markup language).-->
+<!--    Baris diatas mengidentifikasi bahwa berkas ini berformat xml.-->
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+<!--
+   xmlns:android artinya namespace yang digunakan dalam keseluruhan berkas xml
+
+   LinearLayout  sebagai kontainer untuk komponen lain dengan orientasi secara vertikal
+   atau horizontal.
+
+   Padding : jarak dari isi ke tepi komponen (dalam).
+Margin : jarak dari tepi komponen ke komponen lain (luar).
+   -->
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/panjang"/>
+<!--
+  <TextView adalah nama komponen view
+  android: adalah Namespace
+  layout_width= adalah attribute
+  "match_parent" adalah value
+
+  android:<property_name>="@<resource_type>/resource_id" untuk attribute yang memanggil value dari folder res,
+  seperti string, color, dan dimensi.
+android:<property_name>="@+id/view_id" untuk penulisan id.
+  -->
+
+    <EditText
+        android:id="@+id/et_panjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lebar"
+        />
+
+    <EditText
+        android:id="@+id/et_lebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        />
+
+<!--
+ukuran view
+1. wrap_content: menyesuaikan dengan ukuran konten di dalamnya;
+2. match_parent: menyesuaikan dengan ukuran parent (View induknya). Apabila di paling luar,
+berarti mengikuti ukuran layar device-nya; serta
+3. fixed size: menentukan ukuran dengan nilai tetap dengan satuan dp.
+-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tinggi"
+        />
+
+    <EditText
+        android:id="@+id/et_tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        />
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hitung"
+        />
+<!--
+  Ketika memberikan nama id pada sebuah View, Anda sudah memberikan identifier untuk View tersebut.
+  Pemberian id tersebut dimaksudkan agar Anda dapat manipulasi/pengendaliannya pada level logic di komponen, seperti Activity atau Fragment.
+  -->
+
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/hasil"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

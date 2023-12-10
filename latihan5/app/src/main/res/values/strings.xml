@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">latihan3</string>
+    <string name="pindah_activity">Pindah Activity</string>
+    <string name="pindah_activity_data">Pindah Activity dengan Data</string>
+    <string name="pindah_activity_object">Pindah Activity dengan Object</string>
+    <string name="dialnumber">Dial a Number</string>
+    <string name="pindah_activity_result">Pindah Activity untuk Result</string>
+    <string name="hasilActivity">Hasil dari activity</string>
+    <string name="choose_number">Pilih angka yang kamu suka</string>
+
+    <string name="_50">50</string>
+    <string name="_100">100</string>
+    <string name="_150">150</string>
+    <string name="_200">200</string>
+
+    <string name="pilih">Pilih</string>
+    <string name="data_diterima">Data Diterima</string>
+    <string name="object_diterima">Object Diterima</string>
+    <string name="iniMoveActivity">Ini MoveActivity</string>
+
+    <string name="pindah_dengan_result">move with result</string>
+    <string name="hasil_dari_activity">hasil dari activity</string>
+</resources>
